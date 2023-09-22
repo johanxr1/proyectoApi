@@ -1,0 +1,15 @@
+### Get local
+
+GET http://localhost:3000/api/test/users HTTP/1.1
+
+
+### GetLocal with body
+
+GET http://localhost:3000/api/test/autho/login HTTP/1.1
+content-type: application/json
+Authorization: 1234
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
