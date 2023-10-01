@@ -2,6 +2,16 @@
 
 GET http://localhost:3000/api/test/users HTTP/1.1
 
+### GetLocal with autho
+
+GET http://localhost:3000/api/test/autho/ HTTP/1.1
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiSm9oYW4iLCJpYXQiOjE2OTU3NzcwNzQsImV4cCI6MTY5NTc4MDY3NH0.nMEJLjDlyl_jdLsVgd9-6cfmHojMSKNaIW3UpopdDSM
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
 
 ### GetLocal with body
 

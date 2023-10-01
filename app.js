@@ -6,7 +6,7 @@ app.use(json());
 const PORT = 3000;
 
 app.get("/", (req, res) => {
-  res.json({ resp: "Hola mundo" });
+  res.json({ resp: "Pagina raíz API" });
 });
 
 routerApi(app);

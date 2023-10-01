@@ -1,9 +1,7 @@
 import { Router } from "express";
-import authenticateToken from "../middleware/authenticateToken.js";
-import jwt from "jsonwebtoken";
+import Authentications from "../middleware/authenticateToken.js";
 
-var token = jwt.sign({ foo: "bar" }, "shhhhh");
-
+const { authenticateToken, createAuthenticateToken } = Authentications;
 const authoRouter = Router();
 
 /*Prueba general de / */
@@ -15,7 +13,7 @@ authoRouter.get("/", authenticateToken, (req, res) => {
 /*Login del sistema */
 authoRouter.get("/login", (req, res) => {
   var body = req.body;
-  res.json(token);
+  res.json({ token: createAuthenticateToken("Johan") });
 });
 
 export default authoRouter;
