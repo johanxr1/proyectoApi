@@ -2,11 +2,11 @@
 
 GET http://localhost:3000/api/test/users HTTP/1.1
 
-### GetLocal with autho
+### Getbody with autho
 
 GET http://localhost:3000/api/test/autho/ HTTP/1.1
 content-type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiSm9oYW4iLCJpYXQiOjE2OTU3NzcwNzQsImV4cCI6MTY5NTc4MDY3NH0.nMEJLjDlyl_jdLsVgd9-6cfmHojMSKNaIW3UpopdDSM
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiSm9oYW4iLCJpYXQiOjE2OTkxMzA0NTksImV4cCI6MTY5OTEzNDA1OX0.2StFniyAPCNWk-lgjB_OKCeXgokmwcHMTbYv-69hX-E
 
 {
     "name": "sample",

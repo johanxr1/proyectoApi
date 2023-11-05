@@ -7,9 +7,4 @@ userRouter.get("/", (req, res) => {
   res.json({ name: "Johan", detalle: "Hola" });
 });
 
-// userRouter.get("/:id", (req, res) => {
-//   var { id } = req.params;
-//   res.json(Object.values(myjson).filter((item) => item.id === parseInt(id)));
-// });
-
 export default userRouter;
