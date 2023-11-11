@@ -4,7 +4,7 @@ import mysql from "mysql2";
 export const pool = mysql.createPool({
   host: "localhost",
   user: "root",
-  database: "alimentosDB",
+  database: "alimentosdb",
   waitForConnections: true,
   connectionLimit: 10,
   maxIdle: 10, // max idle connections, the default value is the same as `connectionLimit`

@@ -1,11 +1,17 @@
-import { pool } from "../Connection/conexion.js";
+import { pool } from "../connection/conexion.js";
 
 /**
  * @description base Model for all querys
  * @property {pool} is for used to acces the data base
  */
 export default class Model {
-  //Get only one element
+  /**
+   *
+   * @description Get only one element
+   * @param {*} table tabla a consultar
+   * @param {*} data retorno de data
+   * @param {*} callback retorno de callback
+   */
   getOne = async (table, data, callback) => {
     let sql = `SELECT * from ${table} WHERE identificador = ?`;
     pool.query(sql, [data], callback);
