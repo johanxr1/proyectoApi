@@ -1,12 +1,14 @@
 import express, { json } from "express";
 import routerApi from "./routes/index.js";
+import cors from "cors";
 
 const app = express();
 app.use(json());
+app.use(cors());
 const PORT = 3000;
 
 app.get("/", (req, res) => {
-  res.send("Todo correcto");
+  res.send("Index api");
 });
 
 routerApi(app);
