@@ -16,6 +16,7 @@ export default function routerApi(app) {
   /**
    * @description ruta para todos los alimentos, ruta libre
    */
+  router.use("/alimentos/detallada", DataController.getAllDetalled);
   router.use("/alimentos/:id", DataController.getOne);
   router.use("/alimentos", DataController.getAll);
 }

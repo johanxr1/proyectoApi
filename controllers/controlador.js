@@ -24,6 +24,26 @@ export const DataController = {
   },
   /**
    *
+   * @description llamado de todos los elementos de la tabla
+   * @param {tabla} req nombre de tabla traido por url.originalUrl
+   * @returns status, objet(any)
+   */
+  getAllDetalled: (req, res) => {
+    const tabla = req.originalUrl.trim().split("/");
+    new Model().getAllDetalled(tabla[3], (err, results) => {
+      if (err) {
+        res.status(500).send(err);
+      } else {
+        if (results && results.length > 0) {
+          res.status(200).send(results);
+        } else {
+          res.status(200).send(results);
+        }
+      }
+    });
+  },
+  /**
+   *
    * @description Get only one elemento by id
    * @param {tabla} req nombre de tabla traido por url.originalUrl
    * @param {id} req params.id identificador, numerico
