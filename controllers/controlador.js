@@ -28,9 +28,9 @@ export const DataController = {
    * @param {tabla} req nombre de tabla traido por url.originalUrl
    * @returns status, objet(any)
    */
-  getAllDetalled: (req, res) => {
+  getAlimentos: (req, res) => {
     const tabla = req.originalUrl.trim().split("/");
-    new Model().getAllDetalled(tabla[3], (err, results) => {
+    new Model().getAlimentos(tabla[3], (err, results) => {
       if (err) {
         res.status(500).send(err);
       } else {

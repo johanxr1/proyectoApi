@@ -33,3 +33,13 @@ content-type: application/json
 
 GET http://localhost:3000/api/test/alimentos/15 HTTP/1.1
 content-type: application/json
+
+### GetLocal all ciudades
+
+GET http://localhost:3000/api/test/ciudades HTTP/1.1
+content-type: application/json
+
+### GetLocal one ciudades (maracaibo 12)
+
+GET http://localhost:3000/api/test/ciudades/12 HTTP/1.1
+content-type: application/json
